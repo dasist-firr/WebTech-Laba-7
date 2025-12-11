@@ -1,0 +1,160 @@
+:root
+{
+    --bg:#181621;
+    --card:#272f46;
+    --accent:#0bccd6;
+    --muted:#a8aeba;
+    --text:#ffffff;
+    --radius:12px;
+    --container:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body
+{
+    margin:0;
+    font-family: Choco Cooky;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+}
+
+.container
+{
+    max-width:var(--container);
+    margin:0 auto;
+    padding:28px
+}
+
+.site-header
+{
+    background:linear-gradient(90deg,var(--accent),#2563eb);
+    color:#fff;
+    padding:28px 0;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px
+}
+
+.name
+{
+    margin:0;
+    font-size:1.6rem
+}
+
+.tagline
+{
+    margin:6px 0 0;
+    font-size:0.95rem;
+    opacity:0.95
+}
+
+main
+{
+    padding:28px 0
+}
+
+section
+{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 6px 18px rgba(16,24,40,0.06)
+}
+
+section h2
+{
+    margin-top:0
+}
+
+.skills .skill
+{
+    margin-bottom:14px
+}
+
+.skill-header
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.skill-header h3
+{
+    margin:0;
+    font-size:1.05rem
+}
+
+.level
+{
+    font-size:0.9rem;
+    color:var(--muted)
+}
+
+.progress
+{
+    background:#eef2ff;
+    border-radius:999px;
+    height:10px;
+    overflow:hidden;
+    margin:8px 0
+}
+
+.progress .bar
+{
+    display:block;
+    height:100%;
+    border-radius:999px;
+    background:linear-gradient(90deg,var(--accent),#4f46e5)
+}
+
+.skill-desc
+{
+    margin:6px 0 0;
+    color:var(--muted);
+    font-size:0.95rem
+}
+
+.projects ul
+{
+    margin:0;
+    padding-left:18px
+}
+
+.projects li
+{
+    margin-bottom:8px
+}
+
+.contact a
+{
+    color:var(--accent);
+    text-decoration:none
+}
+
+.contact a:hover
+{
+    text-decoration:underline
+}
+
+.site-footer
+{
+    padding:18px 0;
+    text-align:center;
+    color:var(--muted);
+    font-size:0.9rem
+}
+
+@media (max-width:640px)
+{
+    .container
+    {
+        padding:16px
+    }
+
+    .name
+    {
+        font-size:1.2rem
+    }
+}
